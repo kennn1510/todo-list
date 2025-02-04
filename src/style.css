@@ -16,15 +16,42 @@ body {
 .todo-list {
   background-color: skyblue;
   grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
 }
 
 .my-projects-flex {
   display: flex;
-  gap: 20px;
+  justify-content: space-around;
 }
 
-.my-projects-button {
+.my-projects-plus {
+  color: white;
   background-color: transparent;
+  border: none;
+  font-size: xx-large;
+}
+
+.nav-bar {
+  background-color: black;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  list-style: none;
+  font-size: x-large;
+  padding: 0;
+  text-align: center;
+}
+
+.todo-list-text {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
