@@ -13,22 +13,35 @@
       <nav class="nav-bar">
         <div class="first-nav-section">
           <ul class="nav-list">
-            <li class="inbox">Inbox</li>
-            <li class="today">Today</li>
-            <li class="tomorrow">Tomorrow</li>
-            <li class="this-week">This Week</li>
-            <li class="upcoming">Upcoming</li>
-            <li class="completed">Completed</li>
+            <li class="inbox hover">Inbox</li>
+            <li class="today hover">Today</li>
+            <li class="tomorrow hover">Tomorrow</li>
+            <li class="this-week hover">This Week</li>
+            <li class="upcoming hover">Upcoming</li>
+            <li class="completed hover">Completed</li>
           </ul>
         </div>
         <div class="my-projects-flex">
           <h2>My Projects</h2>
-          <button class="my-projects-plus">+</button>
+          <button class="my-projects-plus hover">+</button>
         </div>
       </nav>
       <section>
         <h2>Inbox</h2>
-        <p>+ Add Task</p>
+        <button class="add-task">+ Add Task</button>
+        <dialog>
+          <form action="" method="get" id="task-form">
+            <label for="title">Title: </label>
+            <input type="text" name="title" id="title" required />
+            <label for="description">Description: </label>
+            <input type="text" name="description" id="description" />
+            <label for="due-date">Due Date: </label>
+            <input type="text" name="due-date" id="due-date" />
+            <label for="priority">Priority: </label>
+            <input type="text" name="priority" id="priority" />
+            <input type="submit" value="Add task!" />
+          </form>
+        </dialog>
       </section>
       <footer>Ken Nguyen</footer>
     </div>
