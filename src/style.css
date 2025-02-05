@@ -47,6 +47,10 @@ body {
   text-align: center;
 }
 
+.nav-list > li:hover {
+  border: 2px orange solid;
+}
+
 .todo-list-text {
   grid-column: 1/2;
   display: flex;
